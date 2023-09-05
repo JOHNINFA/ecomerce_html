@@ -1,0 +1,219 @@
+/* Estilos generales */
+body {
+  font-family: "Lato", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/* Estilos de la barra de navegación */
+nav {
+  background-color: #004797;
+  color: white;
+  padding: 20px 50px;
+}
+
+.navTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.searchInput {
+  width: 300px;
+  font-size: 16px;
+  margin-left: 0.3px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.searchInput::placeholder {
+  color: lightgray;
+}
+
+.limitedOffer {
+  font-size: 20px;
+  border-bottom: 2px solid green;
+  cursor: pointer;
+}
+
+.navBottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  margin-top: 20px;
+}
+
+.menuItem {
+  margin-top: 60px;
+  margin-right: 50px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+/* Estilos del banner */
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.imagen_banner {
+  height: 130px;
+  width: 100vw;
+  object-fit: cover;
+}
+
+/* Estilos del contenido */
+.contenedor1 {
+ padding: 12px;
+ background-color: #e5e5e5;
+}
+
+h2 {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+}
+
+.containercamaras {
+
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: #e5e5e5;
+}
+
+.cardCamara {
+  flex-basis: calc(33.33% - 20px);
+  height: 250px;
+  background: #e5e5e5;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 15px 20px 20px rgba(0, 0, 0, 0.3), inset 4px 4px 10px white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 9px;
+  margin-bottom: 20px;
+  transition: transform 0.3s;
+}
+
+.cardCamara:hover {
+  transform: translateY(-8px);
+}
+
+.cardCamara img {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.slider{
+  overflow: hidden;
+}
+
+.slideralarmas{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  transition: all 0.5s ease-in;
+}
+
+.img_alarmas{
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+}
+
+
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 480px) {
+
+  nav {
+    padding: 20px;
+  }
+
+  .search {
+    display: none;
+  }
+
+  .navBottom {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    margin-top: 0;
+  }
+  .navBottom.activo{
+    display: block; 
+    height:50vh;
+    pointer-events: auto;
+  }
+
+
+
+  .menuButton {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+  .menuIcon {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 3px 0;
+  }
+
+ 
+
+  .banner {
+    display: block;
+  }
+
+  .imagen_banner {
+    width: 100%;
+    height: auto;
+  }
+
+ 
+
+  .containercamaras {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .cardCamara {
+    flex-basis: calc(50% - 20px);
+    height: auto;
+    margin: 10px;
+  }
+
+}
+
+
+
+
